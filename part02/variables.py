@@ -7,7 +7,7 @@ print(number)
 # Variable names are case sensitive.
 
 value = 50
-Value = 50
+Value = 100
 
 print(value)
 print(Value)
