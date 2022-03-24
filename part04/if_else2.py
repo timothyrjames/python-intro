@@ -1,6 +1,6 @@
-color = input('Guess my favorite food.')
+food = input('Guess my favorite food.')
 
-if color == 'pizza':
+if food == 'pizza':
     print("That's right!")
 else:
     print("That's wrong.")
