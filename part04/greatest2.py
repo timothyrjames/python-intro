@@ -4,7 +4,7 @@ num3 = int(input('Enter one more number.'))
 
 greatest = num1
 
-if num1 >= num2 and num1 >= num2:
+if num1 >= num2 and num1 >= num3:
     greatest = num1
 elif num2 >= num3 and num2 >= num1:
     greatest = num2
