@@ -1,15 +1,13 @@
-user_input = input("Enter a number and I'll tell you some of its multiples.")
+for i in range(2, 100):
+    is_prime = True
+    for v in range(i - 1, 1, -1):
+        if i % v == 0:
+            is_prime = False
+            # Since we only need ONE evenly divisible number (v) for our 
+            # number (i) to be prime, we can break.
+            # Note that this only breaks us out of the **inner** loop.
+            break
 
-# This looks like it might never end, but we use break to end the loop below.
-while True:
-    value = int(user_input)
-    
-    i = 1
-    while i <= 5:
-        print('%s is a multiple of %s.' % (value * i, value))
-        i += 1
-    
-    user_input = input('Enter another number, or enter "end" to quit.')
-    if user_input == 'end':
-        break
+    if is_prime:
+        print(i)
 
