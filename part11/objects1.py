@@ -1,0 +1,35 @@
+def string_tester(s):
+    print('Our string is "%s"' % s)
+    print('Does it end with "ring"?')
+    print(s.endswith('ring'))
+    print('Does it start with "K"?')
+    print(s.startswith('k'))
+    print('Where is the "e"?')
+    print(s.find('e'))
+    print()
+
+    print('Is it alphanumeric?')
+    print(s.isalnum())
+    print('Is it alphabetic?')
+    print(s.isalpha())
+    print('Is it a digit?')
+    print(s.isdigit())
+    print()
+
+    print('Lower case version:')
+    print(s.lower())
+    print('Upper case version:')
+    print(s.upper())
+    print()
+
+    print('Splitting it into words:')
+    print(s.split(' '))
+    print()
+    print()
+
+
+string_tester('Some String')
+string_tester('Kittens')
+string_tester('745')
+string_tester('This is a sentence.')
+string_tester('1 2 3 4 5 6')
